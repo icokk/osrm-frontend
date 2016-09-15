@@ -58,8 +58,12 @@
 
 /* Zoom control position */
 .leaflet-control-zoom {
-  left: 355px;
+  left: 0;
     color: rgba(37,72,127, 0.8);
+}
+
+.leaflet-routing-container {
+	display: none;
 }
 
 .leaflet-bar a {
@@ -77,7 +81,7 @@
 
 /* Locate control */
 .leaflet-control-locate {
-  left: 355px;
+  left: 0;
   top: -20px;
 }
 
