@@ -94,7 +94,7 @@ var plan = new ReversablePlan([], {
   routeWhileDragging: true,
   createMarker: function(i, wp, n) {
     var options = {
-      draggable: this.draggableWaypoints,
+      draggable: false,
       icon: makeIcon(i, n)
     };
     var marker = L.marker(wp.latLng, options);
@@ -152,7 +152,7 @@ plan.on('waypointgeocoded', function(e) {
 });
 
 // add onClick event
-map.on('click', addWaypoint);
+// map.on('click', addWaypoint);
 function addWaypoint(e) {
   var length = lrmControl.getWaypoints().filter(function(pnt) {
     return pnt.latLng;
