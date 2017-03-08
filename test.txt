@@ -1,0 +1,1 @@
+http://localhost/~ico/osrm-frontend/?z=13&center=46.046608%2C14.526157&loc=46.032487%2C14.511395&loc=46.074898%2C14.453716&hl=en&alt=0
