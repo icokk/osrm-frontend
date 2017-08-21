@@ -182,9 +182,10 @@ plan.on('waypointgeocoded', function(e) {
 });
 
 // add onClick event
-map.on('click', function (e){
-  addWaypoint(e.latlng);
-});
+// map.on('click', function (e){
+//   addWaypoint(e.latlng);
+// });
+
 function addWaypoint(waypoint) {
   var length = lrmControl.getWaypoints().filter(function(pnt) {
     return pnt.latLng;

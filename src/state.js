@@ -44,7 +44,7 @@ var State = L.Class.extend({
     var baseURL = window.location.href.split('?')[0];
     var newParms = links.format(this.options);
     var newURL = baseURL.concat('?').concat(newParms);
-    window.location.hash = newParms;
+    window.location.replace('#' + newParms);
     history.replaceState({}, 'Project OSRM Demo', newURL);
   },
 });
